@@ -1,0 +1,2 @@
+scapy~=2.5.0
+PySimpleGUI~=4.60.4
