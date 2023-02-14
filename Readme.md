@@ -15,3 +15,6 @@ sudo python3 main_gui.py
 
 # Credits
 [@nirmoru](https://github.com/nirmoru/)
+
+# License
+This project is under MIT License
