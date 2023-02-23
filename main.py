@@ -26,5 +26,10 @@ def is_hex(data):
 
 
 def packet_manipulation(packet):
-	scapy.send(scapy.IP(src=packet[0], dst=packet[1])/scapy.TCP(sport=packet[2], dport=packet[3])/scapy.Raw(
-		load=scapy.hex_bytes(packet[4]) if is_hex(packet[4]) is True else packet[4]))
+	try:
+		scapy.send(scapy.IP(src=packet[0], dst=packet[1])/scapy.TCP(sport=packet[2], dport=packet[3])/scapy.Raw(
+			load=scapy.hex_bytes(packet[4]) if is_hex(packet[4]) is True else packet[4]))
+		return True
+	except KeyError:
+		return False
+	
