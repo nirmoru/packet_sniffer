@@ -42,7 +42,6 @@ def PacketSniffer():
 	
 	return [Psg.Window(title="Packet Sniffer",
 					  layout=layout,
-					  location=(800, 600),
 					  finalize=True), DATA_LIST]
 
 
@@ -59,7 +58,6 @@ def PacketAnalysis(data_list):
 	
 	return Psg.Window(title="Packet Analysis",
 					  layout=layout,
-					  location=(800, 600),
 					  finalize=True)
 
 
@@ -72,7 +70,6 @@ def PacketDecoding(hex_data):
 
 	return Psg.Window(title="Packet Decoding",
 					  layout=layout,
-					  location=(800, 600),
 					  finalize=True)
 
 
@@ -88,7 +85,6 @@ def PacketManipulation(data_list):
 	
 	return Psg.Window(title="Packet Manipulation",
 					  layout=layout,
-					  location=(800, 600),
 					  finalize=True)
 
 
